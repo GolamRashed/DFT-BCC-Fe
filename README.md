@@ -1,7 +1,10 @@
 # DFT-BCC-Fe
 Ground state DFT calculation of BCC Iron (Fe)
 
-Quantum ESPRESSO was used as the DFT code. Specs -  
+DFT code: Quantum ESPRESSO  
+Computing: 20 cores Xeon E5-2690v2 3.0GHz, with 96GB RAM  
+
+Specification -
 
 Pseudopotential: Fe.pbe-n-kjpaw_psl.1.0.0.UPF  
 PP Type: PAW  
