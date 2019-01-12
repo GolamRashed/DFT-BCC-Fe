@@ -1,0 +1,67 @@
+&CONTROL
+    calculation   = "bands"
+    forc_conv_thr =  1.00000e-04
+    max_seconds   =  1.72800e+05
+    nstep         = 100
+    outdir        = "./"
+    prefix        = "espresso"
+    pseudo_dir    = "C:\Users\Administrator\.burai\.pseudopot"
+    title         = "Fe2(Band)"
+    tprnfor       = .TRUE.
+    tstress       = .TRUE.
+    wf_collect    = .TRUE.
+    wfcdir        = "./"
+/
+
+&SYSTEM
+    a                         =  2.82206e+00
+    angle1(1)                 =  0.00000e+00
+    angle2(1)                 =  0.00000e+00
+    degauss                   =  1.00000e-02
+    ecutrho                   =  4.10936e+02
+    ecutwfc                   =  4.56595e+01
+    ibrav                     = 1
+    nat                       = 2
+    nbnd                      = 18
+    nspin                     = 2
+    ntyp                      = 1
+    occupations               = "smearing"
+    smearing                  = "gaussian"
+    starting_magnetization(1) =  4.00000e-01
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  4.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+&BANDS
+    filband        = "espresso.band2"
+    lsym           = .FALSE.
+    outdir         = "./"
+    prefix         = "espresso"
+    spin_component = 2
+/
+
+K_POINTS {tpiba_b}
+8
+gG     20
+X      20
+M      20
+gG     20
+R      20
+X      0
+M      20
+R      0
+
+ATOMIC_SPECIES
+Fe     55.84500  Fe.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Fe      0.000000   0.000000   0.000000
+Fe      1.411029   1.411029   1.411029
+
+
