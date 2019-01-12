@@ -1,3 +1,3 @@
-Density of States (DOS) of optimized coordinates and lattice parameters.
+Density of States (DOS) calculation with optimized coordinates and lattice parameters.
 
 
