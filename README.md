@@ -14,6 +14,4 @@ Non-linear core corrections are used.
 Wavefunction Energy Cutoff: 45.659 Ry  
 Charge Density Energy Cutoff: 237.040 Ry  
 k – mesh: 8x8x8  
-Run Type: GGA-PBE  
 Starting Magnetization: 0.4  
-
